@@ -196,6 +196,14 @@ adub* adubp_from_adub(const adub& a) {
     return retp;
 }
 
+adub* adubp_from_adub2(const adub& a) {
+    locint locat = next_loc();
+    locat = next_loc();
+    adub *retp = new adub(locat);
+    (*retp).badouble::operator=(a);
+    return retp;
+}
+
 
 /****************************************************************************/
 /*                                                                   VALUE */

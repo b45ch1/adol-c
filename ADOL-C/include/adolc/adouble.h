@@ -249,6 +249,7 @@ class ADOLC_DLL_EXPORT adub:public badouble {
     friend ADOLC_DLL_EXPORT class advector;
     friend ADOLC_DLL_EXPORT class adubref;
     friend ADOLC_DLL_EXPORT adub* adubp_from_adub(const adub&);
+    friend ADOLC_DLL_EXPORT adub* adubp_from_adub2(const adub&);
     adub( adub const &) {}
 protected:
     adub( locint lo ):badouble(lo) {};
